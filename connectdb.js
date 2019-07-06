@@ -11,16 +11,11 @@ const connectDB = () => {
     }
 
     console.log("connecting to MySQL");
-    try {
-        connection = mysql.connect({
-            user     : 'dev',
-            password : 'animal',
-            database : 'world'
-        })
-    } catch (err) {
-        return null
-    }
-
+    connection = mysql.connect({
+        user     : 'dev',
+        password : 'animal',
+        database : 'world'
+    })
     return connection
 
 }

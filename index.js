@@ -15,7 +15,7 @@ setup()
 async function setup(){
     //set up and start HTTP server and routes
     const app = express()
-    app.use(bodyParser.json());
+    app.use(bodyParser.json())
     applyRoutes(app)
     serveAPI(app)
 }
